@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Login | English Program</title>
+
+<style>
+body{
+  margin:0;
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:linear-gradient(135deg,#0a4aa6,#1e90ff);
+  font-family:Segoe UI, Arial;
+}
+
+.card{
+  background:#ffffff;
+  width:380px;
+  padding:35px 30px;
+  border-radius:18px;
+  text-align:center;
+  box-shadow:0 25px 45px rgba(0,0,0,0.3);
+}
+
+.logo{
+  width:90px;
+  margin-bottom:18px;
+}
+
+h2{
+  color:#0a4aa6;
+  margin-bottom:10px;
+}
+
+p{
+  color:#555;
+  font-size:14px;
+  margin-bottom:30px;
+  line-height:1.5;
+}
+
+button{
+  width:100%;
+  padding:14px;
+  font-size:16px;
+  border:none;
+  border-radius:30px;
+  cursor:pointer;
+  background:#0a4aa6;
+  color:#ffffff;
+  transition:0.3s ease;
+}
+
+button:hover{
+  background:#083b84;
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+  <!-- Logo -->
+  <img src="logo.png" class="logo" alt="Logo">
+
+  <h2>Student Registration</h2>
+  <p>
+    Click the button below to submit your details  
+    and join our English learning program.
+  </p>
+
+  <!-- Google Form Redirect -->
+  <button onclick="openForm()">Proceed to Registration</button>
+
+</div>
+
+<script>
+function openForm(){
+  window.location.href = "https://forms.gle/YmEfNH6MQQApNJmx6";
+}
+</script>
+
+</body>
+</html>
