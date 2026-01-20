@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>English Learning Blueprint</title>
+
+    <!-- ===== CSS INSIDE ===== -->
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+        }
+
+        .container {
+            width: 85%;
+            margin: auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .box {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-left: 6px solid #0b5ed7;
+        }
+
+        .two-col {
+            display: flex;
+            gap: 20px;
+        }
+
+        .area {
+            flex: 1;
+            background: #f9f9f9;
+            padding: 15px;
+        }
+
+        .highlight {
+            border: 2px solid #0b5ed7;
+            background: #eef4ff;
+        }
+
+        ul {
+            padding-left: 18px;
+        }
+
+        .controls {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        button {
+            font-size: 18px;
+            padding: 10px 20px;
+            background: #0b5ed7;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>English Learning Blueprint</h1>
+
+    <div class="box">
+        <h2>English Language Development</h2>
+        <p>Two Core Areas</p>
+    </div>
+
+    <div class="box two-col">
+        <div class="area">
+            <h3>1. Vocabulary</h3>
+            <ul>
+                <li>Telugu lo telisina padalu</li>
+                <li>English meanings telusukovadam</li>
+                <li>Fridge, Train, TV already usage lo unnayi</li>
+                <li>Main struggle kaadu</li>
+            </ul>
+        </div>
+
+        <div class="area highlight">
+            <h3>2. Sentence Formation</h3>
+            <ul>
+                <li>Main struggle area</li>
+                <li>Usage based problem</li>
+                <li>Thinking → English translation issue</li>
+                <li>System focus ikkade</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="box">
+        <h2>Core Problem</h2>
+        <p>
+            Words telusu.<br>
+            Usage teliyadu.
+        </p>
+    </div>
+
+    <div class="box">
+        <h2>System Focus</h2>
+        <p>
+            Vocabulary memorization kaadu.<br>
+            Usage-based sentence formation.
+        </p>
+    </div>
+
+    <div class="controls">
+        <button onclick="playAudio()">▶ Play Blueprint Audio</button>
+    </div>
+
+</div>
+
+<!-- ===== AUDIO ===== -->
+<audio id="blueprintAudio" src="blueprint_intro.mp3"></audio>
+
+<!-- ===== JS INSIDE ===== -->
+<script>
+    function playAudio() {
+        const audio = document.getElementById("blueprintAudio");
+        audio.play();
+    }
+</script>
+
+</body>
+</html>
